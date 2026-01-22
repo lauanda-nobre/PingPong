@@ -1,20 +1,20 @@
-let disposivo
-if ('ontouchstart' in window) {
-	disposivo = "touch"
-  }else{
-	disposivo = "notouch"
-  }
+let device;
+if ("ontouchstart" in window) {
+  device = "touch";
+} else {
+  device = "notouch";
+}
 
 function setup() {
-	if(disposivo == "notouch"){
-		configurar();
-	}else if(disposivo == "touch"){
-		window.location.replace("./message.html");
-	}
+  if (device == "notouch") {
+    setup();
+  } else if (device == "touch") {
+    window.location.replace("./message.html");
+  }
 }
 
 function draw() {
-	if(disposivo == "notouch"){
-		desenhar();
-	}
+  if (device == "notouch") {
+    draw();
+  }
 }
