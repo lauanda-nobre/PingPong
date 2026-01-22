@@ -37,18 +37,10 @@ When the ball is moving away from the bot, the opponent paddle gradually returns
 
 The ball movement follows a basic physics simulation. Its position is updated every frame using horizontal and vertical speed values combined with directional multipliers. When the ball collides with the left or right borders of the canvas, the horizontal direction is inverted, creating the bouncing effect against the window edges.
 
-![Enemy image](./readme/enemymov.png)
+![Enemy image](./readme/enemymove.png)
 
 Collisions with the player or opponent paddles invert the vertical direction of the ball. After each paddle collision, a small increment is applied to both the horizontal and vertical speeds, causing the ball to gradually accelerate as the match progresses. This mechanic increases difficulty over time while keeping the implementation simple and readable.
 
 ![ball image](./readme/moveball.png)
 
-#### 1.4 Conclusion
-
-This project was developed during my initial learning phase with JavaScript. At that time, I was still familiarizing myself with the general programming language and practices, which led to some design decisions that, in retrospect, could have been improved.
-
-One such decision was to mix Portuguese and English throughout the codebase, including variable names, function names, and comments. While this did not affect the game's functionality, it negatively affected code consistency, readability, and long-term maintainability.
-
-Using multiple languages within the same project can introduce unnecessary friction, especially for other developers or even for future code revisits, as I did in this readme update. Today, it's clear that adopting a single language standard from the start is a fundamental best practice for writing clean, professional, and scalable code.
-
-Despite these limitations, the project successfully served its purpose at the time. In addition to being a technical exercise, it became a valuable learning experience that contributed to a better understanding of game logic, code organization, and the importance of consistent naming conventions in software development.
+that's all... :)
