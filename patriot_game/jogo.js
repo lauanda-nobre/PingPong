@@ -149,8 +149,8 @@ function moverPlayer() {
 }
 let pontosOponent = 0;
 let pontos = 0;
-let winTarget = 5; // Default to 5 points
-let gameEnded = false; // Flag to prevent multiple victory calls
+let winTarget = 5; //padrão de 5 pontos
+let gameEnded = false; //prevenir multiplas chamadas
 
 function calcularPontos() {
   if (player.y + 100 < ball.y) {
